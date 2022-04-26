@@ -7,4 +7,5 @@ class Product(models.Model):
     title = models.CharField(max_length=120)  # max_length=required
     description = models.TextField(blank=True, null=True)
     price = models.DecimalField(max_digits=10000, decimal_places=2)
-    summary = models.TextField()
+    summary = models.TextField(blank=True, null=False)
+    Featured = models.BooleanField()  # Null=True and default=True
