@@ -12,4 +12,4 @@ def home_view(request, *args, **kwargs):
 
 
 def contact_view(request, *args, **kwargs):
-    return HttpResponse("<h1>Contact Page</h1>")
+    return render(request, "contact.html", {})
